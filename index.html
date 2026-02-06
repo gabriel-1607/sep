@@ -18,6 +18,13 @@ body > div:first-child {
 #encabezado-aplicacion > div > button, #menu-aplicacion > ul > li {
   background-image: linear-gradient(to top left, #edc080, white 80%);
 }
+/* Habilita que el encabezado y su barra de navegación puedan recorrerse si el visor tiene poca altura */
+@media (min-width:576px) {
+  #encabezado-aplicacion > div:first-child {
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+}
 </style>
 </head>
 
@@ -29,7 +36,7 @@ body > div:first-child {
       <header id="encabezado-aplicacion" class="col-sm-4 col-md-3 col-xl-2 mb-4">
         <div class="sticky-sm-top">
           <h1>
-            <a class="text-decoration-none" href="/">
+            <a class="text-decoration-none" href="/sep">
               <img class="img-fluid" src="logo.png" alt="Logo: SEP">
             </a>
           </h1>
@@ -41,7 +48,7 @@ body > div:first-child {
               <li class="nav-item rounded-pill p-2"><button id="boton-de-debates" class="btn w-100" type="button">Debates</button></li>
               <li class="nav-item rounded-pill p-2"><button id="boton-de-encuestas" class="btn w-100" type="button">Encuestas</button></li>
               <li class="nav-item rounded-pill p-2"><button id="boton-de-descripcion" class="btn w-100" type="button">Sobre SEP</button></li>
-              <li class="nav-item rounded-pill p-2"><a class="btn w-100" href="/">Cerrar Sesión</a></li>
+              <li class="nav-item rounded-pill p-2"><a class="btn w-100" href="/sep">Cerrar Sesión</a></li>
               
             </ul>
           </nav>
