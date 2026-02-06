@@ -4,11 +4,21 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Stakeholder engagement platform</title>
-  <link rel="icon" href="http://127.0.0.1:8000/static/images/favicon.ico">
+  <link rel="icon" href="/favicon.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   
 <link href="./index_files/estilo.css" rel="stylesheet">
+<style>
+  /* Gradiente de fondo de toda la aplicación*/
+body > div:first-child {
+  background-image: linear-gradient(to right, #ffc68ddc, white 40%);
+}
 
+/* Gradiente de los botones de la navegación principal y del boton que la controla */
+#encabezado-aplicacion > div > button, #menu-aplicacion > ul > li {
+  background-image: linear-gradient(to top left, #edc080, white 80%);
+}
+</style>
 </head>
 
 <body>
@@ -19,8 +29,8 @@
       <header id="encabezado-aplicacion" class="col-sm-4 col-md-3 col-xl-2 mb-4">
         <div class="sticky-sm-top">
           <h1>
-            <a class="text-decoration-none" href="http://127.0.0.1:8000/">
-              <img class="img-fluid" src="./index_files/logo.png" alt="Logo: SIP">
+            <a class="text-decoration-none" href="/">
+              <img class="img-fluid" src="/logo.png" alt="Logo: SEP">
             </a>
           </h1>
           <button class="d-sm-none btn w-100 mb-3 rounded-3 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#menu-aplicacion">Menú</button>
