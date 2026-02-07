@@ -1,32 +1,15 @@
 <!DOCTYPE html>
-<!-- saved from url=(0029)http://127.0.0.1:8000/#metodo -->
+<!-- saved from url=(0022)http://127.0.0.1:8000/ -->
 <html lang="es-EC"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Stakeholder engagement platform</title>
-  <link rel="icon" href="favicon.ico">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="icon" href="http://127.0.0.1:8000/static/images/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   
-<link href="./index_files/estilo.css" rel="stylesheet">
-<style>
-  /* Gradiente de fondo de toda la aplicación*/
-body > div:first-child {
-  background-image: linear-gradient(to right, #ffc68ddc, white 40%);
-}
+<link href="estilo.css" rel="stylesheet">
 
-/* Gradiente de los botones de la navegación principal y del boton que la controla */
-#encabezado-aplicacion > div > button, #menu-aplicacion > ul > li {
-  background-image: linear-gradient(to top left, #edc080, white 80%);
-}
-/* Habilita que el encabezado y su barra de navegación puedan recorrerse si el visor tiene poca altura */
-@media (min-width:576px) {
-  #encabezado-aplicacion > div:first-child {
-    max-height: 100vh;
-    overflow-y: auto;
-     padding-bottom: 30px;
-  }
-}
-</style>
 </head>
 
 <body>
@@ -34,11 +17,11 @@ body > div:first-child {
   <div class="min-vh-100">
     <div class="container-fluid row">
 
-      <header id="encabezado-aplicacion" class="col-sm-4 col-md-3 col-xl-2 mb-2 mb-sm-0">
-        <div class="sticky-sm-top">
+      <header id="encabezado-aplicacion" class="col-sm-4 col-md-3 col-xl-2">
+        <div class="sticky-sm-top pb-sm-4 overflow-y-auto">
           <h1>
             <a class="text-decoration-none" href="/sep">
-              <img class="img-fluid" src="logo.png" alt="Logo: SEP">
+              <img class="img-fluid" src="logo.png" alt="Logo: SIP">
             </a>
           </h1>
           <button class="d-sm-none btn w-100 mb-3 rounded-3 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#menu-aplicacion">Menú</button>
@@ -48,7 +31,7 @@ body > div:first-child {
               <li class="nav-item rounded-pill p-2"><button id="boton-de-temas" class="btn w-100" type="button">Temas</button></li>
               <li class="nav-item rounded-pill p-2"><button id="boton-de-debates" class="btn w-100" type="button">Debates</button></li>
               <li class="nav-item rounded-pill p-2"><button id="boton-de-encuestas" class="btn w-100" type="button">Encuestas</button></li>
-              <li class="nav-item rounded-pill p-2"><button id="boton-de-descripcion" class="btn w-100" type="button">Sobre SEP</button></li>
+              <li class="nav-item rounded-pill p-2"><button id="boton-de-informacion" class="btn w-100" type="button">Sobre SEP</button></li>
               <li class="nav-item rounded-pill p-2"><a class="btn w-100" href="/sep">Cerrar Sesión</a></li>
               
             </ul>
@@ -59,7 +42,7 @@ body > div:first-child {
       <main class="col-sm m-sm-3">
         
 
-<section id="informacion" class="show collapse row flex-column row-gap-2">
+<section id="informacion" class="collapse row flex-column row-gap-2">
 
   <header class="my-3">
     <h2>Concepto y descripción</h2>
@@ -167,7 +150,7 @@ body > div:first-child {
           Un debate ya no recibe votos, sino que acepta comentarios (entiéndase aportaciones). A su vez,
           los comentarios reciben apoyo o rechazo. Una vez que la diferencia entre las personas que lo apoyan
           y lo rechazan alcanza más de la mitad del total de las personas, el comentario, junto con el título
-          y descripcción del debate, pasan a la persona encargada para que, en base a ello, elabore una encuesta.
+          y descripción del debate, pasan a la persona encargada para que, en base a ello, elabore una encuesta.
           El debate podrá seguir recibiendo más comentarios en base a los cuales se elaboren más encuestas.
         </p>
       </li>
@@ -231,7 +214,7 @@ body > div:first-child {
 <section id="encuestas" class="collapse">
 
   <header class="my-3">
-    <h2>Debates</h2>
+    <h2>Encuestas</h2>
   </header>
 
   <!-- TODO -->
@@ -249,7 +232,7 @@ body > div:first-child {
 <div class="modal fade" tabindex="-1" id="modal-iniciar-tema" data-bs-backdrop="static" data-bs-keyboard="false">
   <div class="modal-dialog">
     <form class="modal-content">
-      <input type="hidden" name="csrfmiddlewaretoken" value="ga6ZZ9S1Fgi48xifG80j83x0QLdOdbbV6QMb26r3RWYcmitZKQVwqCgnqbyaSHy5">
+      <input type="hidden" name="csrfmiddlewaretoken" value="N70FKOqwW9TOJAed8fn1LkliGez4PwBl8VnZZgVzcABAatDE24NcqAoVZIvPa0vt">
       <div class="modal-header">
         <div class="modal-title w-75">
           <label for="input_titulo_tema" class="form-label">Título</label>
@@ -272,7 +255,7 @@ body > div:first-child {
 <div class="modal fade" tabindex="-1" id="modal_nuevo_comentario" data-bs-backdrop="static" data-bs-keyboard="false">
   <div class="modal-dialog">
     <form class="modal-content">
-      <input type="hidden" name="csrfmiddlewaretoken" value="ga6ZZ9S1Fgi48xifG80j83x0QLdOdbbV6QMb26r3RWYcmitZKQVwqCgnqbyaSHy5">
+      <input type="hidden" name="csrfmiddlewaretoken" value="N70FKOqwW9TOJAed8fn1LkliGez4PwBl8VnZZgVzcABAatDE24NcqAoVZIvPa0vt">
       <div class="modal-header">
         <div class="modal-title w-75">Tu nuevo comentario</div>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -326,24 +309,42 @@ body > div:first-child {
     </div>
   </div>
 
-  
-<script>
-  const mis_urls = {
-    tema: "/temas",
-    debate: "/debates",
-    votar: "/votar"
-  };
-</script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const todasLasSecciones = document.querySelectorAll('main > section');
+      const informacion = document.querySelector('informacion');
+      const temas = document.querySelector('main #temas');
+      const debates = document.querySelector('main #debates');
+      const encuestas = document.querySelector('main #encuestas');
 
-<script src="./index_files/indice.js.descarga"></script>
+      document.querySelectorAll('#menu-aplicacion button').forEach(boton => {
 
-<script src="./index_files/utilidades.js.descarga"></script>
-<script src="./index_files/votar.js.descarga"></script>
+        const idBoton = boton.id.split('-');
+        const elementos = Array.from(todasLasSecciones).filter(elemento => elemento.id != idBoton[idBoton.length - 1] );
+        const elAMostrar = Array.from(todasLasSecciones).find(elemento => elemento.id == idBoton[idBoton.length - 1] );
 
-  <!-- Los mensajes del servidor del contexto pasados a JSON -->
-  <script id="mensajes_del_servidor" type="application/json">[]</script>
-  <script src="./index_files/mensajes.js.descarga"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        boton.addEventListener('click', () => {
+
+          elementos.forEach(elemento => {
+            if (elemento.classList.contains('show')) {
+              const collapseHide = bootstrap.Collapse.getOrCreateInstance(elemento);
+              collapseHide.hide();
+            }
+          });
+
+          if (!elAMostrar.classList.contains('show')) {
+            const collapseShow = bootstrap.Collapse.getOrCreateInstance(elAMostrar);
+            collapseShow.show()
+          }
+
+        });
+      });
+
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 
 
 </body></html>
