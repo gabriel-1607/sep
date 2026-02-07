@@ -1,0 +1,14 @@
+/* Gradiente de fondo de toda la aplicación*/
+body > div:first-child {
+  background-image: linear-gradient(to right, #ffc68ddc, white 40%);
+}
+
+/* Gradiente de los botones de la navegación principal y del boton que la controla */
+#encabezado-aplicacion > div > button, #menu-aplicacion > ul > li {
+  background-image: linear-gradient(to top left, #edc080, white 80%);
+}
+
+/* Habilita que el encabezado y su barra de navegación puedan recorrerse si el visor tiene poca altura */
+#encabezado-aplicacion > div:first-child {
+  max-height: 100vh;
+}
